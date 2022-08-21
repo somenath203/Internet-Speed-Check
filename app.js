@@ -76,6 +76,8 @@ const getAverageSpeed = () => {
 
 button.addEventListener('click', async () => {
 
+    button.textContent = 'Checking...';
+
     for (let i = 0; i < totalNumberOfTestsForAccurateResult; i++) {
 
         const speed = await getLoadGIFSpeed();
@@ -90,5 +92,7 @@ button.addEventListener('click', async () => {
         displaySpeedResultDiv.style.display = 'block';
 
     }
+
+    button.textContent = 'Check Internet Speed';
 
 });
