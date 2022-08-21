@@ -59,7 +59,7 @@ const getLoadGIFSpeed = async () => {
 }
 
 
-const totalNumberOfTestsForAccurateResult = 100;
+const totalNumberOfTestsForAccurateResult = 1000;
 
 const test_result_final = [];
 
