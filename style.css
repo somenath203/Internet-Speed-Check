@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  letter-spacing: 7px;
+  font-family: 'DynaPuff', cursive;
+}
+
+.progress-bar {
+  height: 2rem;
+  width: 65rem;
+  background-color: rgb(228, 228, 228);
+  margin-bottom: 6rem;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-image: linear-gradient(
+    to right,
+    #5bb318,
+    #63ba17,
+    #6cc016,
+    #74c715,
+    #7dce13
+  );
+  border-radius: 10px;
+
+  transition: width 0.15s;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  padding: 1.6rem;
+  border-radius: 10px;
+  background-color: #5800ff;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7a4495;
+}
+
+.speed-text {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(0, 153, 255);
+  margin-top: 6rem;
+  display: none;
+}
+
+
+@media (max-width: 667px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .progress-bar {
+    width: 55rem;
+  }
+}
+
+@media (max-width: 556px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .progress-bar {
+    width: 50rem;
+  }
+}
+
+
+@media (max-width: 499px) {
+  .heading {
+    font-size: 1.9rem;
+  }
+
+  .progress-bar {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 459px) {
+  .heading {
+    font-size: 1.9rem;
+  }
+
+  .progress-bar {
+    width: 40rem;
+  }
+}
+
+
+@media (max-width: 416px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .progress-bar {
+    width: 35rem;
+  }
+}
+
+
+@media (max-width: 359px) {
+  .heading {
+    font-size: 1rem;
+  }
+
+  .progress-bar {
+    width: 30rem;
+  }
+}
